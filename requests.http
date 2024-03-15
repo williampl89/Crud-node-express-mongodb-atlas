@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Alessandro Peralta",
+    "age": 5,
+    "email": "alessandro12@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/65d946e4138e5c2a86b795ed HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/65d946e4138e5c2a86b795ed HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Francis baby update 111",
+    "age": 55,
+    "email": "babynicaraguaupdate@yahoo.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/65d948af138e5c2a86b795f0 HTTP/1.1
